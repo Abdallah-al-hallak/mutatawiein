@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mutatawiein/association/bloc/association_bloc.dart';
 import 'package:mutatawiein/data/model/association.dart';
+import 'package:mutatawiein/data/remote/dio_ass.dart';
+import 'package:mutatawiein/data/remote/dio_login.dart';
 import 'package:mutatawiein/router/route.gr.dart';
 
 class AssociationPage extends StatefulWidget {
@@ -74,7 +76,11 @@ class _AssociationCardState extends State<AssociationCard> {
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () async {
+                  print('began');
+                  await DioAssociation()
+                      .addVolToAss(widget.association[index].id ?? 1);
+                },
                 child: Text('انضمام')),
           ),
         );

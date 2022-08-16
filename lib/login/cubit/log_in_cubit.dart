@@ -21,6 +21,7 @@ class LogInCubit extends Cubit<LogInState> {
       );
 
       await SharedFunc().setToken('token', model.jwtResponse.token);
+      await SharedFunc().setId('id', model.id);
 
       emit(const LogInState.success());
     } on Exception catch (e) {

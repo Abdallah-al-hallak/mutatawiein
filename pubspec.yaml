@@ -32,17 +32,18 @@ dependencies:
   build_runner: ^2.2.0
   cupertino_icons: ^1.0.2
   dio: ^4.0.6
-  lottie: ^1.4.1
   dropdown_button2: ^1.7.1
+  expandable: ^5.0.1
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
+  fluttertoast: ^8.0.9
   freezed: ^2.1.0+1
   freezed_annotation: ^2.1.0
   google_fonts: ^3.0.1
-  expandable: ^5.0.1
   im_stepper: ^1.0.1+1
   logger: ^1.1.0
+  lottie: ^1.4.1
   shared_preferences: ^2.0.15
 
 dev_dependencies:
